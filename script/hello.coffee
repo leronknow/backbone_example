@@ -15,15 +15,15 @@
 #  var listview = new ListView();
 
 #})(jQuery);
-jQuery ->
+$ ->
 	class ListView extends Backbone.View
 		el: $ 'body'
-
 		initialize: ->
 			_.bindAll @
-		 	@render()
+
+			@render()
 
 		render: ->
 		 	$(@el).append '<h1>Hello backbone</h1>'
 			
-	List_view = new ListView
+		List_view = new ListView
