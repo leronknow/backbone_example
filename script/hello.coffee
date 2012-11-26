@@ -1,5 +1,4 @@
 #(function($){
-  
  # var ListView = Backbone.View.extend({
   #  el: $('body'),
   #  initialize: function(){
@@ -16,14 +15,14 @@
 
 #})(jQuery);
 $ ->
-	class ListView extends Backbone.View
-		el: $ 'body'
-		initialize: ->
-			_.bindAll @
+  class ListView extends Backbone.View
+    el: $ 'body'
+    initialize: ->
+      _.bindAll @
 
-			@render()
+      @render()
 
-		render: ->
-		 	$(@el).append '<h1>Hello backbone</h1>'
-			
-		List_view = new ListView
+    render: ->
+      $(@el).append '<h1>Hello backbone</h1>'
+
+    List_view = new ListView

@@ -1,20 +1,20 @@
 $ ->
-	class ListView extends Backbone.View
-		
-		el: $ 'body'
+  class ListView extends Backbone.View
 
-		initialize: ->
-			_.bindAll @
-			@counter =0
-			@render()
+    el: $ 'body'
 
-		render: ->
-			$(@el).append '<ul></ul>'
-			$(@el).append '<button>add item</button>'
+    initialize: ->
+      _.bindAll @
+      @counter =0
+      @render()
 
-		addItem: ->
-			@counter++
-			$('ul').append "<li>hello,#{@counter}</li>"
+    render: ->
+      $(@el).append '<ul></ul>'
+      $(@el).append '<button>add item</button>'
 
-		events: 'click button': 'addItem'
-	list_view = new ListView
+    addItem: ->
+      @counter++
+      $('ul').append "<li>hello,#{@counter}</li>"
+
+    events: 'click button': 'addItem'
+  list_view = new ListView
